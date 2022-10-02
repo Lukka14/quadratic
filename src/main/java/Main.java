@@ -16,6 +16,7 @@ public class Main {
         ResultSet rs=null;
 
         // reading sql file
+        // JDBC driver should be installed!
         try{
             connection = ConnectionPool.getInstance().retrieve();
             ps = connection.prepareStatement("SELECT * FROM equations");
